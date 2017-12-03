@@ -1,9 +1,2 @@
-﻿  MyString.cpp
-  04_自定义String类.cpp
-  03_自定义智能指针.cpp
-  02_小括号重载和new和delete.cpp
-  01_MyArray.cpp
-  正在生成代码...
-f:\visualstudio_workspace\c++基础\src\day04\01_myarray.cpp(129): warning C4172: 返回局部变量或临时变量的地址: a
-  day04.vcxproj -> F:\VisualStudio_Workspace\C++基础\Debug\C++_day04.exe
-  day04.vcxproj -> F:\VisualStudio_Workspace\C++基础\Debug\C++_day04.pdb (Full PDB)
+﻿  day04.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day04.exe
+  day04.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day04.pdb (Full PDB)

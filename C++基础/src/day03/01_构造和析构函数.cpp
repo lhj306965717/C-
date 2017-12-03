@@ -16,7 +16,7 @@ public:student(int a, int b)
 }
 };
 
-// 声明静态，防止多个文件中的声明出现重复
+
 class Test
 {
 public:
@@ -125,11 +125,12 @@ Test fun2()
 
 	t1.printf();
 
-	//Test t2 = t1;
+	//Test t2 = t1; // 因为是把t1作为参数传递给t2作为参数构造
 	// 被注释掉的这两种调用方式是不一样的，第一种会直接调用拷贝构造函数
-	// 第二种，会直接调用 =操作符重载
+
 	//Test t2;
-	//t2 = t1;
+	// 第二种，会直接调用 =操作符重载
+	//t2 = t1; // 这种t2已经存在，只是让t2指向t1
 
 	cout << "func2 end....." << endl;
 
@@ -207,7 +208,34 @@ static void test5()
 // 总结：构造与析构函数的调用相反，谁先构造，谁先析构
 // 总结：只要涉及到 函数的 参数 是对象的，不管是 形参 还是返回值，那么都会进行一次 拷贝构造函数的操作，这是因为函数的副本机制导致的
 
-int main_01(void) {
+
+
+//---------   测试类   ----------
+class Student
+{
+private:
+	int a;
+	int b;
+
+public:
+	void printf()
+	{
+		cout << "a=" << a << "   b=" << b << endl;
+	}
+
+	Student()
+	{
+
+	}
+
+	Student(int a, int b)
+	{
+		this->a = a;
+		this->b = b;
+	}
+};
+
+int main(void) {
 
 	//Test t(10, 100);
 
@@ -228,7 +256,13 @@ int main_01(void) {
 
 	//test4();
 
-	test5();
+	//test5();
+
+
+
+	// 测试类中的变量是否会自动初始化
+	Student stu;
+	stu.printf();
 
 
 	return 0;

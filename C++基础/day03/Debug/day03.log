@@ -1,2 +1,6 @@
-﻿MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 _main，该符号在函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中被引用
-F:\VisualStudio_Workspace\C++基础\Debug\C++_day03.exe : fatal error LNK1120: 1 个无法解析的外部命令
+﻿  03_new和delete.cpp
+  02_构造函数的初始化列表.cpp
+  01_构造和析构函数.cpp
+  正在生成代码...
+  day03.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day03.exe
+  day03.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day03.pdb (Full PDB)

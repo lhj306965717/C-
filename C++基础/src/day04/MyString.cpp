@@ -66,7 +66,7 @@ MyString::~MyString()
 
 //--------------------   操作符重载  -----------------------
 
-//注意-注意：一定要返回一个对象，而不是返回一个引用，因为temp是一个临时值，返回引用会出现错误，因为temp被释放了
+//注意-注意：一定要返回一个对象，而不能返回引用，因为temp是一个临时值，返回引用会出现错误，因为temp被释放了
 MyString operator+(const MyString &s1, const MyString &s2)
 {
 	MyString temp;

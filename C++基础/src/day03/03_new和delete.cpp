@@ -3,6 +3,7 @@
 using namespace std;
 
 // 特别总结：
+// 把10 当作 类似 类的构造函数的参数传递
 int a(10); // 这样声明也是可以的，实际上是 int a = 10; 声明后就直接初始化
 
 
@@ -71,7 +72,7 @@ static void test()
 
 	cout << "*****************************************" << endl;
 
-	Test *tp = (Test *)malloc(sizeof(Test));
+	Test *tp = (Test *)malloc(sizeof(Test)); // 其实这个跟计算结构体大小的方式一样，所以可以看出 C++ 中的类其实就是结构体的变形
 
 	// 没法使用构造函数进行初始化
 

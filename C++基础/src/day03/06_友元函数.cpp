@@ -54,7 +54,7 @@ double Test::PointDistance(Point &p1, Point &p2)
 	//int s_x = p1.getX() - p2.getX();
 	//int s_y = p1.getY() - p2.getY();
 
-	// 有没有把法在这里通过Point对象 直接拿到X,Y值，不需要频繁的调用的方法
+	// 有没有办法在这里通过Point对象 直接拿到X,Y值，不需要频繁的调用的方法
 	// 通过声明友元函数的方式
 	int s_x = p1.x - p2.y;
 	int s_y = p1.y - p2.y;
@@ -66,6 +66,7 @@ double Test::PointDistance(Point &p1, Point &p2)
 
 class T {
 public:
+	T(int a);
 	int add(int a, int b);// 可以声明函数，但是没有实现的函数无法被调用
 };
 

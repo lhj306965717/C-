@@ -28,7 +28,7 @@ public:
 class MyAutoPtr
 {
 private:
-	B *ptr;
+	B *ptr; // 因为没有学习泛型，所以这里只能写死
 public:
 	MyAutoPtr(B *ptr)
 	{
@@ -81,6 +81,7 @@ int main_03(void)
 	cout << "++++++++++++++++++++++++++++++++" << endl;
 
 	// 如果 不屏蔽上面代码，打印出来的结果会有干扰
+
 
 	MyAutoPtr myPtr(new B(1000));
 	myPtr->func();

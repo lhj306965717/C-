@@ -1,18 +1,2 @@
-﻿  05_C++ 中 const 增强.cpp
-  04_C++中左值.cpp
-  03_C++语言增强的地方.cpp
-  02_自定义命名空间.cpp
-f:\visualstudio_workspace\c++基础\src\day01\02_自定义命名空间.cpp(36): warning C4101: “t1”: 未引用的局部变量
-  01_hell word.cpp
-  正在生成代码...
-  条件编译.c
-  06_枚举.c
-  05_C语言const.c
-f:\visualstudio_workspace\c++基础\src\day01\05_c语言const.c(7): warning C4090: “初始化”: 不同的“const”限定符
-  04_左值-三目运算符.c
-  03_C语言.c
-f:\visualstudio_workspace\c++基础\src\day01\03_c语言.c(32): warning C4020: “g”: 实参太多
-f:\visualstudio_workspace\c++基础\src\day01\03_c语言.c(30): warning C4101: “s”: 未引用的局部变量
-  正在生成代码...
-  day01.vcxproj -> F:\VisualStudio_Workspace\C++基础\Debug\C++_day01.exe
-  day01.vcxproj -> F:\VisualStudio_Workspace\C++基础\Debug\C++_day01.pdb (Full PDB)
+﻿  day01.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day01.exe
+  day01.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day01.pdb (Full PDB)

@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// 在C++ 中 的一个文件 相当于 java的一个类
 
 // C++ 中 为什么static声明只能在本文件中使用，有点类似java中类，java中 static是属于类中的，
 // 而C++是属于当前这个文件的，所以把当前文件当成一个类来使用
