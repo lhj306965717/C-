@@ -14,7 +14,7 @@ public :
 	char a[20];
 
 public : static AdvHero instance() {
-	return{ 11, "ÁÄ", "Ìì" };
+	return{ 11, "èŠ", "å¤©" };
 	}
 };
 
@@ -30,7 +30,7 @@ int main(void) {
 
 	cout << adv.a << endl;
 
-	//AdvHero.instance(); // »¹ÊÇÃ»ÓĞÀàËÆjavaÖĞµÄÖ±½Óµ÷ÓÃ¾²Ì¬·½·¨
+	//AdvHero.instance(); // è¿˜æ˜¯æ²¡æœ‰ç±»ä¼¼javaä¸­çš„ç›´æ¥è°ƒç”¨é™æ€æ–¹æ³•
 
 	return 0;
 }

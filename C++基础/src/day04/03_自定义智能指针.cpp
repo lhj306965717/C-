@@ -16,19 +16,19 @@ public:
 
 	void func()
 	{
-		cout << "µ÷ÓÃ func º¯Êı" << endl;
+		cout << "è°ƒç”¨ func å‡½æ•°" << endl;
 	}
 
 	~B()
 	{
-		cout << "Îö¹¹B" << endl;
+		cout << "ææ„B" << endl;
 	}
 };
 
 class MyAutoPtr
 {
 private:
-	B *ptr; // ÒòÎªÃ»ÓĞÑ§Ï°·ºĞÍ£¬ËùÒÔÕâÀïÖ»ÄÜĞ´ËÀ
+	B *ptr; // å› ä¸ºæ²¡æœ‰å­¦ä¹ æ³›å‹ï¼Œæ‰€ä»¥è¿™é‡Œåªèƒ½å†™æ­»
 public:
 	MyAutoPtr(B *ptr)
 	{
@@ -41,19 +41,19 @@ public:
 		{
 			delete this->ptr;
 			this->ptr = NULL;
-			this->ptr = nullptr; // ¸úÉÏÃæµÄĞ§¹ûÊÇÒ»ÑùµÄ
+			this->ptr = nullptr; // è·Ÿä¸Šé¢çš„æ•ˆæœæ˜¯ä¸€æ ·çš„
 		}
 
-		cout << "´¥·¢Îö¹¹ MyAutoPtr" << endl;
+		cout << "è§¦å‘ææ„ MyAutoPtr" << endl;
 	}
 
-	// ÖØĞ´ -> ²Ù×÷·û
+	// é‡å†™ -> æ“ä½œç¬¦
 	B * operator ->()
 	{
 		return this->ptr;
 	}
 
-	// ÖØĞ´ * ²Ù×÷·û
+	// é‡å†™ * æ“ä½œç¬¦
 	B & operator *()
 	{
 		return *this->ptr;
@@ -63,24 +63,24 @@ public:
 int main_03(void)
 {
 	//int *p = new int;
-	//// Õâ¸ö¾ÍÊÇÒ»ÖÖÊı¾İÀàĞÍ£¬ÊÇÒ»¸öÖ¸ÏòintÀàĞÍµÄÖ¸Õë
+	//// è¿™ä¸ªå°±æ˜¯ä¸€ç§æ•°æ®ç±»å‹ï¼Œæ˜¯ä¸€ä¸ªæŒ‡å‘intç±»å‹çš„æŒ‡é’ˆ
 	//auto_ptr<int> ptr(new int);
 
 	//*ptr = 20;
 
 	//B *pa = new B(10);
-	//pa->func(); // ÆäÊµ Àà£¬¾ÍÊÇ Ò»¸ö½á¹¹Ìå
+	//pa->func(); // å…¶å® ç±»ï¼Œå°±æ˜¯ ä¸€ä¸ªç»“æ„ä½“
 	//delete pa;
 
 
 	//auto_ptr<B> ptra(new B(100));
 	//ptra->func();
-	////  ²»ĞèÒªÊÖ¶¯ÊÍ·Å
+	////  ä¸éœ€è¦æ‰‹åŠ¨é‡Šæ”¾
 
 
 	cout << "++++++++++++++++++++++++++++++++" << endl;
 
-	// Èç¹û ²»ÆÁ±ÎÉÏÃæ´úÂë£¬´òÓ¡³öÀ´µÄ½á¹û»áÓĞ¸ÉÈÅ
+	// å¦‚æœ ä¸å±è”½ä¸Šé¢ä»£ç ï¼Œæ‰“å°å‡ºæ¥çš„ç»“æœä¼šæœ‰å¹²æ‰°
 
 
 	MyAutoPtr myPtr(new B(1000));

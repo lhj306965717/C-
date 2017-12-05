@@ -1,7 +1,7 @@
 #pragma once
 
 #include<iostream>
-// ×¢Òâ£ºÉÏÏÂÁ½¸ö²»ÄÜÉÙ
+// æ³¨æ„ï¼šä¸Šä¸‹ä¸¤ä¸ªä¸èƒ½å°‘
 using namespace std;
 
 class MyString
@@ -12,33 +12,33 @@ private:
 
 public:
 
-	// ¹¹Ôìº¯Êı
+	// æ„é€ å‡½æ•°
 	MyString();
-	MyString(int len); // ´´½¨Ò»¸ö³¤¶ÈÊÇlenµÄstring¶ÔÏó
-	MyString(const char *str); // Í¨¹ıÒ»¸ö×Ö·û´®³õÊ¼»¯
+	MyString(int len); // åˆ›å»ºä¸€ä¸ªé•¿åº¦æ˜¯lençš„stringå¯¹è±¡
+	MyString(const char *str); // é€šè¿‡ä¸€ä¸ªå­—ç¬¦ä¸²åˆå§‹åŒ–
 	MyString(const MyString &another);
 
-	// Îö¹¹º¯Êı
+	// ææ„å‡½æ•°
 	~MyString();
 
-	// ²Ù×÷·ûÖØÔØ []
+	// æ“ä½œç¬¦é‡è½½ []
 	// new char[10]
 	char & operator[](const int len);
 
-	// ²Ù×÷·ûÖØÔØ <<
+	// æ“ä½œç¬¦é‡è½½ <<
 	friend ostream & operator<<(ostream &os, const MyString &s);
 
-	// ²Ù×÷·ûÖØÔØ >>
+	// æ“ä½œç¬¦é‡è½½ >>
 	friend istream & operator>>(istream &is, MyString &s);
 
-	// ²Ù×÷·ûÖØÔØ ==
+	// æ“ä½œç¬¦é‡è½½ ==
 
-	// ²Ù×÷·ûÖØÔØ !=
+	// æ“ä½œç¬¦é‡è½½ !=
 
-	// ²Ù×÷·ûÖØÔØ =
+	// æ“ä½œç¬¦é‡è½½ =
 	MyString & operator=(const MyString &another);
 
-	// ²Ù×÷·ûÖØÔØ +
+	// æ“ä½œç¬¦é‡è½½ +
 	friend MyString operator+(const MyString &s1, const MyString &s2);
 
 

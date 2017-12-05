@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// ÖØÔØÐ¡À¨ºÅ
+// é‡è½½å°æ‹¬å·
 
 class Sqr
 {
@@ -31,51 +31,51 @@ private:
 	int a;
 
 public:
-	// Ä¬ÈÏ¹¹Ôìº¯Êý
+	// é»˜è®¤æž„é€ å‡½æ•°
 	A() 
 	{
-		cout << "ÎÞ²Î¹¹Ôìº¯Êý" << endl;
+		cout << "æ— å‚æž„é€ å‡½æ•°" << endl;
 	}
 
 	A(int a)
 	{
-		cout << "AµÄ¹¹Ôìº¯Êý" << endl;
+		cout << "Açš„æž„é€ å‡½æ•°" << endl;
 		this->a = a;
 	}
 
-	// ×¢Òâ£ºsize_t ¾ÍÊÇ unsigned int
-	// ÖØÔØµÄnew²Ù×÷·û ÒÀÈ»»á´¥·¢¶ÔÏóµÄ¹¹Ôìº¯Êý
+	// æ³¨æ„ï¼šsize_t å°±æ˜¯ unsigned int
+	// é‡è½½çš„newæ“ä½œç¬¦ ä¾ç„¶ä¼šè§¦å‘å¯¹è±¡çš„æž„é€ å‡½æ•°
 	void * operator new(size_t size)
 	{
-		// ÕâÀïµÄ´óÐ¡ÊÇ4£¬ÎªÊ²Ã´ÄØ£¬ÒòÎªÕâ¸öÀàÖÐµÄ Ö»ÓÐÒ»¸ö int ÀàÐÍµÄ±äÁ¿
-		// Èç¹ûÔÙÌí¼ÓÆäËû±äÁ¿£¬ÄÇÃ´Õâ¸ösizeµÄ´óÐ¡¾Í²»ÊÇ4ÁË
-		cout << "ÖØÔØÁËnew²Ù×÷·û : " << size << endl;
+		// è¿™é‡Œçš„å¤§å°æ˜¯4ï¼Œä¸ºä»€ä¹ˆå‘¢ï¼Œå› ä¸ºè¿™ä¸ªç±»ä¸­çš„ åªæœ‰ä¸€ä¸ª int ç±»åž‹çš„å˜é‡
+		// å¦‚æžœå†æ·»åŠ å…¶ä»–å˜é‡ï¼Œé‚£ä¹ˆè¿™ä¸ªsizeçš„å¤§å°å°±ä¸æ˜¯4äº†
+		cout << "é‡è½½äº†newæ“ä½œç¬¦ : " << size << endl;
 		return malloc(size);
 	}
 
-	// ÖØÔØ delete
+	// é‡è½½ delete
 	void operator delete(void *p)
 	{
-		cout << "ÖØÔØÁË delete ²Ù×÷·û" << endl;
+		cout << "é‡è½½äº† delete æ“ä½œç¬¦" << endl;
 		free(p);
 	}
 
-	// ×¢Òâ£ºÕâÀïÖØÔØµÄ ÊÇ " new[] "
+	// æ³¨æ„ï¼šè¿™é‡Œé‡è½½çš„ æ˜¯ " new[] "
 	void * operator new[](size_t size)
 	{
-		cout << "ÖØÔØÁË new [] ²Ù×÷·û : " << size << endl;
+		cout << "é‡è½½äº† new [] æ“ä½œç¬¦ : " << size << endl;
 		return malloc(size);
 	}
 
 	void operator delete[](void * p)
 	{
-		cout << "ÖØÔØÁË delete[] ²Ù×÷·û" << endl;
+		cout << "é‡è½½äº† delete[] æ“ä½œç¬¦" << endl;
 		free(p);
 	}
 
 	~A()
 	{
-		cout << "A µÄÎö¹¹º¯Êý" << endl;
+		cout << "A çš„æžæž„å‡½æ•°" << endl;
 	}
 };
 
@@ -83,23 +83,23 @@ int main_02(void)
 {
 	Sqr s(10);
 
-	// ÎÒÃÇ½«Ò»¸ö¶ÔÏó µ±³ÉÒ»¸öÆÕÍ¨º¯ÊýÀ´µ÷ÓÃ
-	// ³ÆÕâÖÖ¶ÔÏóÊÇ·Âº¯Êý»òÕßÎ±º¯Êý
-	int a = s(2);// ×¢Òâ£ºÕâÀï²»ÊÇµ÷ÓÃ¹¹Ôìº¯Êý£¬ÊÇµ÷ÓÃÒ»¸öÎÞ²ÎµÄº¯Êý
+	// æˆ‘ä»¬å°†ä¸€ä¸ªå¯¹è±¡ å½“æˆä¸€ä¸ªæ™®é€šå‡½æ•°æ¥è°ƒç”¨
+	// ç§°è¿™ç§å¯¹è±¡æ˜¯ä»¿å‡½æ•°æˆ–è€…ä¼ªå‡½æ•°
+	int a = s(2);// æ³¨æ„ï¼šè¿™é‡Œä¸æ˜¯è°ƒç”¨æž„é€ å‡½æ•°ï¼Œæ˜¯è°ƒç”¨ä¸€ä¸ªæ— å‚çš„å‡½æ•°
 
 
-	A *p = new A(10); // 10 Õâ¸ö²ÎÊý£¬ÊÇÎªÁË´¥·¢ µ¥¸ö²ÎÊýµÄ¹¹Ôìº¯Êý
-	//p->operator new(sizeof(A)); // Êµ¼ÊÉÏËûÊÇÕâÑù´¥·¢µÄ
+	A *p = new A(10); // 10 è¿™ä¸ªå‚æ•°ï¼Œæ˜¯ä¸ºäº†è§¦å‘ å•ä¸ªå‚æ•°çš„æž„é€ å‡½æ•°
+	//p->operator new(sizeof(A)); // å®žé™…ä¸Šä»–æ˜¯è¿™æ ·è§¦å‘çš„
 
-	delete p; // ÊÍ·Å
+	delete p; // é‡Šæ”¾
 
 
 	A *arr = new A[3];
-	//arr->operator new[](sizeof(A) * 3); // ÕâÊÇÊµ¼ÊµÄµ÷ÓÃ·½Ê½
+	//arr->operator new[](sizeof(A) * 3); // è¿™æ˜¯å®žé™…çš„è°ƒç”¨æ–¹å¼
 
-	delete[] arr; // ÊÍ·Å
+	delete[] arr; // é‡Šæ”¾
 
 	return 0;
 }
 
-// ×¢Òâ£º²»ÍÆ¼ö ÖØÐ´ && || £¬ÒòÎªÖØÐ´ÁË£¬²»»áÊµÏÖ¶ÌÂ·¹¦ÄÜ£¬¼È&& Èç¹ûµÚÒ»¸ö²ÎÊýÎªfalse£¬ÄÇÃ´ºóÃæ¸ö²ÎÊý»¹ÊÇ»áÖ´ÐÐ(¶ÌÂ·¹¦ÄÜÊÇ²»»áÖ´ÐÐµÄ)
+// æ³¨æ„ï¼šä¸æŽ¨è é‡å†™ && || ï¼Œå› ä¸ºé‡å†™äº†ï¼Œä¸ä¼šå®žçŽ°çŸ­è·¯åŠŸèƒ½ï¼Œæ—¢&& å¦‚æžœç¬¬ä¸€ä¸ªå‚æ•°ä¸ºfalseï¼Œé‚£ä¹ˆåŽé¢ä¸ªå‚æ•°è¿˜æ˜¯ä¼šæ‰§è¡Œ(çŸ­è·¯åŠŸèƒ½æ˜¯ä¸ä¼šæ‰§è¡Œçš„)

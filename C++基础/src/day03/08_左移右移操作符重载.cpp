@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// ±È½Ï³£ÓÃµÄ ×óÒÆÓÒÒÆ ²Ù×÷·ûÖØÔØ
+// æ¯”è¾ƒå¸¸ç”¨çš„ å·¦ç§»å³ç§» æ“ä½œç¬¦é‡è½½
 
 class Complex
 {
@@ -22,10 +22,10 @@ public:
 		cout << this->a << "  :  " << this->b << endl;
 	}
 
-	// È«¾ÖµÄÓÑÔªĞÎÊ½
+	// å…¨å±€çš„å‹å…ƒå½¢å¼
 	friend ostream& operator<<(ostream &os, Complex &c);
 
-	// ²»½¨Òé ×óÒÆ²Ù×÷·û Ğ´ÔÚ³ÉÔ±·½·¨ÖĞ£¬·ñÔòµ÷ÓÃµÄË³Ğò»á±ä·´
+	// ä¸å»ºè®® å·¦ç§»æ“ä½œç¬¦ å†™åœ¨æˆå‘˜æ–¹æ³•ä¸­ï¼Œå¦åˆ™è°ƒç”¨çš„é¡ºåºä¼šå˜å
 	ostream& operator<<(ostream &os)
 	{
 		os << "(" << this->a << " : " << this->b << ")";
@@ -33,11 +33,11 @@ public:
 		return os;
 	}
 
-	// ÓÒÒÆ²Ù×÷·û
+	// å³ç§»æ“ä½œç¬¦
 	friend istream& operator >> (istream &is, Complex &c);
 };
 
-// ×óÒÆ ²Ù×÷·ûÖØÔØ
+// å·¦ç§» æ“ä½œç¬¦é‡è½½
 ostream& operator<<(ostream &os, Complex &c)
 {
 	os << "(" << c.a << " : " << c.b << ")";
@@ -45,7 +45,7 @@ ostream& operator<<(ostream &os, Complex &c)
 	return os;
 }
 
-// ÓÒÒÆ²Ù×÷·ûÖØÔØ
+// å³ç§»æ“ä½œç¬¦é‡è½½
 istream& operator>>(istream &is, Complex &c)
 {
 	is >> c.a >> c.b;
@@ -87,15 +87,15 @@ int main_08(void)
 
 	cout << c1 << c2;
 
-	cout << endl; // ·Ö¸îÏß
+	cout << endl; // åˆ†å‰²çº¿
 
-	// Ğ´³É ³ÉÔ±·½·¨º¯Êı µÄµ÷ÓÃ·½Ê½
-	c1 << cout; // ·¢ÏÖµ÷ÓÃË³Ğò·´ÁË£¬ËùÒÔ²»½¨Òé½« ×óÒÆ Ğ´ÔÚ³ÉÔ±º¯ÊıÖĞ
+	// å†™æˆ æˆå‘˜æ–¹æ³•å‡½æ•° çš„è°ƒç”¨æ–¹å¼
+	c1 << cout; // å‘ç°è°ƒç”¨é¡ºåºåäº†ï¼Œæ‰€ä»¥ä¸å»ºè®®å°† å·¦ç§» å†™åœ¨æˆå‘˜å‡½æ•°ä¸­
 
 
-	cout << endl; // ·Ö¸îÏß
+	cout << endl; // åˆ†å‰²çº¿
 
-	//  ÓÒÒÆ²Ù×÷·ûµÄÊ¹ÓÃ
+	//  å³ç§»æ“ä½œç¬¦çš„ä½¿ç”¨
 	//cin >> c1 >> c2;
 
 	//c1.printfComplex();
@@ -103,7 +103,7 @@ int main_08(void)
 
 
 
-	// ²âÊÔÖ±½ÓÊ¶±ğÊı×é£º
+	// æµ‹è¯•ç›´æ¥è¯†åˆ«æ•°ç»„ï¼š
 
 	Array p1(1);
 	Array p2(2);
@@ -113,7 +113,7 @@ int main_08(void)
 
 	cout << pt[0] << pt[1] << pt[2];
 
-	cout << endl; // ·Ö¸îÏß
+	cout << endl; // åˆ†å‰²çº¿
 
 	return 0;
 }
