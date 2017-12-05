@@ -1,25 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#if 1  // ×¢Òâ£ºÔ¤´¦Àí ÔÚ×îÍâ²ã²»ÄÜÊ¹ÓÃÀ¨ºÅ°ü¹üÆðÀ´£¬
+#if 1  // æ³¨æ„ï¼šé¢„å¤„ç† åœ¨æœ€å¤–å±‚ä¸èƒ½ä½¿ç”¨æ‹¬å·åŒ…è£¹èµ·æ¥ï¼Œ
 
 void fff() {
-	printf("fff ·½·¨±»µ÷ÓÃ\n");
+	printf("fff æ–¹æ³•è¢«è°ƒç”¨\n");
 }
 
 void ggg() {
-	printf("ggg ·½·¨±»µ÷ÓÃ\n");
+	printf("ggg æ–¹æ³•è¢«è°ƒç”¨\n");
 }
 
 #endif
 void ff() {
-	printf("ff ·½·¨±»µ÷ÓÃ\n");
+	printf("ff æ–¹æ³•è¢«è°ƒç”¨\n");
 }
 
 
 int main_(void) {
 
-#if 1  // Ô¤´¦ÀíÔÚÀïÃæ¿ÉÒÔ Ê¹ÓÃÀ¨ºÅ °ü¹ü
+#if 1  // é¢„å¤„ç†åœ¨é‡Œé¢å¯ä»¥ ä½¿ç”¨æ‹¬å· åŒ…è£¹
 	{
 		fff();
 		ggg();
