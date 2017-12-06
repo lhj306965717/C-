@@ -19,15 +19,15 @@ public:
 		this->id = id;
 
 
-		// ²»ÄÜ½øĞĞÇ³¿½±´£¬ÒÔ·ÀÖ¹±»ÊÍ·Å
+		// ä¸èƒ½è¿›è¡Œæµ…æ‹·è´ï¼Œä»¥é˜²æ­¢è¢«é‡Šæ”¾
 		//this->name = name;
 
-		// ÎªÁË°²È«£¬Ö»ÄÜ½øĞĞÉî¿½±´
+		// ä¸ºäº†å®‰å…¨ï¼Œåªèƒ½è¿›è¡Œæ·±æ‹·è´
 		int len = strlen(name);
 		this->name = new char[len+1];
 		strcpy(this->name, name);
 	}
-	// Éî¿½±´¹¹Ôìº¯Êı
+	// æ·±æ‹·è´æ„é€ å‡½æ•°
 	Student(const Student &annoth)
 	{
 		this->id = annoth.id;
@@ -41,7 +41,7 @@ public:
 		cout << this->id << " : " << this->name << endl;
 	}
 
-	// = ²Ù×÷·ûÖØÔØ
+	// = æ“ä½œç¬¦é‡è½½
 	Student & operator=(Student &annoth)
 	{
 		if (this == &annoth)
@@ -49,7 +49,7 @@ public:
 			return *this;
 		}
 
-		// ÏÈ½«×ÔÉíµÄ¿Õ¼ä»ØÊÕµô
+		// å…ˆå°†è‡ªèº«çš„ç©ºé—´å›æ”¶æ‰
 		if (this->name != NULL)
 		{
 			delete[] this->name; 
@@ -57,9 +57,9 @@ public:
 			this->id = 0;
 		}
 
-		// Éî¿½±´
+		// æ·±æ‹·è´
 		this->id = annoth.id;
-		// Ö±½Ó½øĞĞÉî¿½±´²Ù×÷
+		// ç›´æ¥è¿›è¡Œæ·±æ‹·è´æ“ä½œ
 		int len = strlen(annoth.name);
 		this->name = new char[len + 1];
 		strcpy(this->name, annoth.name);
@@ -71,10 +71,10 @@ public:
 
 int main_09(void)
 {
-	Student s1(24, "ÁÎºì½Ü");
+	Student s1(24, "å»–çº¢æ°");
 	Student s2;
 
-	// ²Ù×÷·ûÖØÔØ
+	// æ“ä½œç¬¦é‡è½½
 	s2 = s1;
 
 	s2.printf();

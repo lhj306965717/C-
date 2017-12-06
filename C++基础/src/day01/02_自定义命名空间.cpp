@@ -2,13 +2,13 @@
 
 using namespace std;
 
-// ×¢Òâ£ºnamespace ÊÇ¹Ø¼ü×Ö
-// ¶¨ÒåÒ»¸öÃüÃû¿Õ¼ä
+// æ³¨æ„ï¼šnamespace æ˜¯å…³é”®å­—
+// å®šä¹‰ä¸€ä¸ªå‘½åç©ºé—´
 namespace spaceA
 {
 	int g_a = 10;
 
-	namespace spaceB { // ¿ÉÒÔÇ¶Ì×
+	namespace spaceB { // å¯ä»¥åµŒå¥—
 	
 		struct teacher
 		{
@@ -17,8 +17,8 @@ namespace spaceA
 		};
 	}
 
-	// ÒÑ¾­²âÊÔ¹ı£¬µ«ÊÇ²»³£ÓÃ
-	using namespace spaceB; // ÔÚA ÖĞÊ¹ÓÃB£¬ÉùÃ÷ºóÔÚÊ¹ÓÃÖĞ£¬¾Í²»ĞèÉùÃ÷ B ÁË
+	// å·²ç»æµ‹è¯•è¿‡ï¼Œä½†æ˜¯ä¸å¸¸ç”¨
+	using namespace spaceB; // åœ¨A ä¸­ä½¿ç”¨Bï¼Œå£°æ˜ååœ¨ä½¿ç”¨ä¸­ï¼Œå°±ä¸éœ€å£°æ˜ B äº†
 }
 
 
@@ -27,11 +27,11 @@ int main_02(void)
 
 	using namespace spaceA;
 
-	cout << g_a << endl; // Ê¹ÓÃ
+	cout << g_a << endl; // ä½¿ç”¨
 
-	// Ç¶Ì×µÄÃüÃû¿Õ¼äÉùÃ÷  '::' ÊÇÓò²Ù×÷·û
-	// using namespace spaceA::spaceB; // µ¥¸ö±äÁ¿ÉùÃ÷
-	using namespace spaceB; // Á½ÖÖÉùÃ÷¶¼Ò»Ñù,
+	// åµŒå¥—çš„å‘½åç©ºé—´å£°æ˜  '::' æ˜¯åŸŸæ“ä½œç¬¦
+	// using namespace spaceA::spaceB; // å•ä¸ªå˜é‡å£°æ˜
+	using namespace spaceB; // ä¸¤ç§å£°æ˜éƒ½ä¸€æ ·,
 
 	struct teacher t1;
 

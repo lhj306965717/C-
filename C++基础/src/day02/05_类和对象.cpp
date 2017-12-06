@@ -14,7 +14,7 @@ public :
 	char a[20];
 
 public : static AdvHero instance() {
-	return{ 11, "ÁÄ", "Ìì" };
+	return{ 11, "èŠ", "å¤©" };
 	}
 };
 

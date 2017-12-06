@@ -9,7 +9,7 @@ int main(void)
 {
 
 //	string s1("123");
-//	string s2 = "abc"; // ½øĞĞÁË²Ù×÷·ûÖØÔØµÄ
+//	string s2 = "abc"; // è¿›è¡Œäº†æ“ä½œç¬¦é‡è½½çš„
 
 	MyString s1("123");
 	MyString s2("abc");

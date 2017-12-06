@@ -43,7 +43,7 @@ MyString::MyString(const int len)
 	}
 }
 
-// ¿½±´¹¹ÔìÊÇ³õÊ¼»¯µÄÊ±ºò²Åµ÷ÓÃ£¬Ö®Ç°ÊÇÃ»ÓĞÀ¬»øµÄ£¬ËùÒÔ²»ÓÃ¿¼ÂÇÀ¬»ø»ØÊÕ
+// æ‹·è´æ„é€ æ˜¯åˆå§‹åŒ–çš„æ—¶å€™æ‰è°ƒç”¨ï¼Œä¹‹å‰æ˜¯æ²¡æœ‰åƒåœ¾çš„ï¼Œæ‰€ä»¥ä¸ç”¨è€ƒè™‘åƒåœ¾å›æ”¶
 MyString::MyString(const MyString &another)
 {
 	cout << another.str << endl;
@@ -57,28 +57,28 @@ MyString::~MyString()
 {
 	if (this->str != NULL)
 	{
-		cout << this->str << " -> Ö´ĞĞÁËÎö¹¹" << endl;
+		cout << this->str << " -> æ‰§è¡Œäº†ææ„" << endl;
 		delete this->str;
 		this->len = 0;
 		this->str = NULL;
 	}
 }
 
-//--------------------   ²Ù×÷·ûÖØÔØ  -----------------------
+//--------------------   æ“ä½œç¬¦é‡è½½  -----------------------
 
-//×¢Òâ-×¢Òâ£ºÒ»¶¨Òª·µ»ØÒ»¸ö¶ÔÏó£¬¶ø²»ÄÜ·µ»ØÒıÓÃ£¬ÒòÎªtempÊÇÒ»¸öÁÙÊ±Öµ£¬·µ»ØÒıÓÃ»á³öÏÖ´íÎó£¬ÒòÎªtemp±»ÊÍ·ÅÁË
+//æ³¨æ„-æ³¨æ„ï¼šä¸€å®šè¦è¿”å›ä¸€ä¸ªå¯¹è±¡ï¼Œè€Œä¸èƒ½è¿”å›å¼•ç”¨ï¼Œå› ä¸ºtempæ˜¯ä¸€ä¸ªä¸´æ—¶å€¼ï¼Œè¿”å›å¼•ç”¨ä¼šå‡ºç°é”™è¯¯ï¼Œå› ä¸ºtempè¢«é‡Šæ”¾äº†
 MyString operator+(const MyString &s1, const MyString &s2)
 {
 	MyString temp;
 
-	temp.str = new char[s1.len + s2.len + 1]; // ÉêÇëÒ»¸ö¶ÑÄÚ´æ
+	temp.str = new char[s1.len + s2.len + 1]; // ç”³è¯·ä¸€ä¸ªå †å†…å­˜
 	temp.len = s1.len + s2.len;
 	
-	// Ò»¶¨Òª½øĞĞÇå¿Õ,ÒòÎªÏÂÃæÊ¹ÓÃµÄ strnact
+	// ä¸€å®šè¦è¿›è¡Œæ¸…ç©º,å› ä¸ºä¸‹é¢ä½¿ç”¨çš„ strnact
 	memset(temp.str, 0, temp.len);
 
 	//strncat(temp.str, s1.str, s1.len);
-	strcpy(temp.str, s1.str); //Èç¹ûÏÈÊ¹ÓÃÁË strcpy £¬¿ÉÒÔÖ±½ÓÊ¡ÂÔ memset º¯ÊıµÄµ÷ÓÃ
+	strcpy(temp.str, s1.str); //å¦‚æœå…ˆä½¿ç”¨äº† strcpy ï¼Œå¯ä»¥ç›´æ¥çœç•¥ memset å‡½æ•°çš„è°ƒç”¨
 	
 	strncat(temp.str, s2.str, s2.len);
 
@@ -92,7 +92,7 @@ ostream & operator<<(ostream &os, const MyString &s)
 }
 
 
-// ×¢Òâ£º MyString &s ÊÇĞèÒª Ğ´ ²Ù×÷µÄ£¬ËùÒÔ²»ÄÜÉùÃ÷Îª const
+// æ³¨æ„ï¼š MyString &s æ˜¯éœ€è¦ å†™ æ“ä½œçš„ï¼Œæ‰€ä»¥ä¸èƒ½å£°æ˜ä¸º const
 istream & operator>>(istream &is, MyString &s)
 {
 	if (s.str != NULL)
@@ -102,11 +102,11 @@ istream & operator>>(istream &is, MyString &s)
 		s.str = NULL;
 	}
 
-	// ÒòÎª³¤¶ÈÊÇ²»È·¶¨µÄ£¬ËùÒÔÃ»·¨ÎŞÏŞÖÆÊäÈë£¬Ö»ÄÜÓĞÒ»¸öÁÙÊ±ÖµÀ´»º´æ
-	// °üÀ¨ string Ò²²»ÄÜÎŞÏŞÖÆÊäÈë£¬Ò»µ©³¬¹ı»º³åÖµ¾Í»á±ÀÀ£
+	// å› ä¸ºé•¿åº¦æ˜¯ä¸ç¡®å®šçš„ï¼Œæ‰€ä»¥æ²¡æ³•æ— é™åˆ¶è¾“å…¥ï¼Œåªèƒ½æœ‰ä¸€ä¸ªä¸´æ—¶å€¼æ¥ç¼“å­˜
+	// åŒ…æ‹¬ string ä¹Ÿä¸èƒ½æ— é™åˆ¶è¾“å…¥ï¼Œä¸€æ—¦è¶…è¿‡ç¼“å†²å€¼å°±ä¼šå´©æºƒ
 	char temp_str[4096] = { 0 };
 
-	// ×¢Òâ£ºÕâÀïµÄÊäÈëÊÇ cin
+	// æ³¨æ„ï¼šè¿™é‡Œçš„è¾“å…¥æ˜¯ cin
 	is >> temp_str;
 
 	int len = strlen(temp_str);
@@ -120,7 +120,7 @@ istream & operator>>(istream &is, MyString &s)
 }
 
 
-// ×¢Òâ£ºÕâÊÇÖØÔØµÄ Êı×é²Ù×÷·û
+// æ³¨æ„ï¼šè¿™æ˜¯é‡è½½çš„ æ•°ç»„æ“ä½œç¬¦
 char & MyString::operator[](const int index)
 {
 	return this->str[index];
