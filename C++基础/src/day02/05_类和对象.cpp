@@ -30,7 +30,9 @@ int main(void) {
 
 	cout << adv.a << endl;
 
-	//AdvHero.instance(); // 还是没有类似java中的直接调用静态方法
+	// 静态访问方式
+	AdvHero hero = AdvHero::instance();
+	cout << hero.name << endl;
 
 	return 0;
 }
