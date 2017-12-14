@@ -1,1 +1,27 @@
-﻿
+﻿  05_C++ 中 const 增强.cpp
+e:\workspace\c-\c++基础\src\day01\05_c++ 中 const 增强.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  04_C++中左值.cpp
+  03_C++语言增强的地方.cpp
+e:\workspace\c-\c++基础\src\day01\03_c++语言增强的地方.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  02_自定义命名空间.cpp
+e:\workspace\c-\c++基础\src\day01\02_自定义命名空间.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day01\02_自定义命名空间.cpp(36): warning C4101: “t1”: 未引用的局部变量
+  01_hell word.cpp
+e:\workspace\c-\c++基础\src\day01\01_hell word.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  条件编译.c
+e:\workspace\c-\c++基础\src\day01\条件编译.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  06_枚举.c
+e:\workspace\c-\c++基础\src\day01\06_枚举.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  05_C语言const.c
+e:\workspace\c-\c++基础\src\day01\05_c语言const.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day01\05_c语言const.c(7): warning C4090: “初始化”: 不同的“const”限定符
+  04_左值-三目运算符.c
+e:\workspace\c-\c++基础\src\day01\04_左值-三目运算符.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  03_C语言.c
+e:\workspace\c-\c++基础\src\day01\03_c语言.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day01\03_c语言.c(32): warning C4020: “g”: 实参太多
+e:\workspace\c-\c++基础\src\day01\03_c语言.c(30): warning C4101: “s”: 未引用的局部变量
+  正在生成代码...
+  day01.vcxproj -> E:\Workspace\C-\C++基础\Debug\C++_day01.exe
+  day01.vcxproj -> E:\Workspace\C-\C++基础\Debug\C++_day01.pdb (Full PDB)

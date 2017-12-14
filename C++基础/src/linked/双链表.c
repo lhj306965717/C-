@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -7,16 +7,16 @@
 
 typedef struct Node
 {
-	char str[30]; // ½ÚµãÖµ
+	char str[30]; // èŠ‚ç‚¹å€¼
 	struct Node *pre;
-	struct Node *next; // ÏÂÒ»¸ö½Úµã
+	struct Node *next; // ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
 } Node;
 
 Node* first = NULL;
-Node* end = NULL; // µ¥Á´±íµÄÎ²½Úµã
+Node* end = NULL; // å•é“¾è¡¨çš„å°¾èŠ‚ç‚¹
 
-// Ìí¼Ó½Úµã
-void addNode(char *des)
+// æ·»åŠ èŠ‚ç‚¹
+static void addNode(char *des)
 {
 	Node *node = (Node *)malloc(sizeof(struct Node));
 	strcpy(node->str, des);
@@ -32,14 +32,14 @@ void addNode(char *des)
 		end->next = node;
 		node->pre = end;
 
-		end = end->next; // ¸üÐÂ½Úµã
+		end = end->next; // æ›´æ–°èŠ‚ç‚¹
 	}
 
 	end->next = NULL;
 }
 
-// ´òÓ¡ËùÓÐ½Úµã
-void printfNode()
+// æ‰“å°æ‰€æœ‰èŠ‚ç‚¹
+static void printfNode()
 {
 	Node * tempNode = first;
 
@@ -54,8 +54,8 @@ void printfNode()
 	}
 }
 
-// É¾³ý½Úµã
-void deleteNode(int index)
+// åˆ é™¤ç¬¬æŸä¸ªèŠ‚ç‚¹
+static void deleteNode(int index)
 {
 	if (first == NULL)
 		return;
@@ -76,7 +76,7 @@ void deleteNode(int index)
 
 	if (temp == NULL)
 	{
-		printf("É¾³ýÁ´±íµÄÎ»ÖÃ´íÎó...");
+		printf("åˆ é™¤é“¾è¡¨çš„ä½ç½®é”™è¯¯...");
 	}
 	else
 	{
@@ -89,12 +89,12 @@ void deleteNode(int index)
 		temp->next = NULL;
 		temp->pre = NULL;
 
-		free(temp); // ÊÍ·ÅÕâ¸ö½Úµã
+		free(temp); // é‡Šæ”¾è¿™ä¸ªèŠ‚ç‚¹
 	}
 }
 
 
-int main(void)
+int main_2(void)
 {
 	addNode("liao");
 	addNode("hong");

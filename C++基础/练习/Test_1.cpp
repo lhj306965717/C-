@@ -27,7 +27,7 @@ namespace B
 	}
 }
 
-int main(void)
+int main_0(void)
 {
 	using namespace B;
 

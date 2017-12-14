@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -6,18 +6,18 @@
 //#include<memory.h>
 //#include<malloc.h>
 
-// µ¥Á´±í
+// å•é“¾è¡¨
 
 typedef struct Node
 {
-	char str[30]; // ½ÚµãÖµ
-	struct Node *next; // ÏÂÒ»¸ö½Úµã
+	char str[30]; // èŠ‚ç‚¹å€¼
+	struct Node *next; // ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
 } Node;
 
 static Node* first = NULL;
-static Node* end = NULL; // µ¥Á´±íµÄÎ²½Úµã
+static Node* end = NULL; // å•é“¾è¡¨çš„å°¾èŠ‚ç‚¹
 
-/*Ìí¼Ó½Úµã*/
+/*æ·»åŠ èŠ‚ç‚¹*/
 static void addNode(char *s)
 {
 	Node *node = (Node *)malloc(sizeof(struct Node));
@@ -28,8 +28,8 @@ static void addNode(char *s)
 
 	if (first == NULL)
 	{
-		first = node; // ÈÃµÚÒ»¸ö½ÚµãÖ¸ÏòÍ·½Úµã
-		end = first; // µÚÒ»¸ö½Úµã¼ÈÊÇÍ·½áµãÒ²ÊÇÎ²½Úµã
+		first = node; // è®©ç¬¬ä¸€ä¸ªèŠ‚ç‚¹æŒ‡å‘å¤´èŠ‚ç‚¹
+		end = first; // ç¬¬ä¸€ä¸ªèŠ‚ç‚¹æ—¢æ˜¯å¤´ç»“ç‚¹ä¹Ÿæ˜¯å°¾èŠ‚ç‚¹
 	}
 	else
 	{
@@ -37,7 +37,7 @@ static void addNode(char *s)
 		end = node;
 	}
 
-	node->next = NULL; // ¸ø×îºóµÄÎ²²¿½ÚµãÉèÖÃÎªNULL
+	node->next = NULL; // ç»™æœ€åçš„å°¾éƒ¨èŠ‚ç‚¹è®¾ç½®ä¸ºNULL
 
 	printf("%s  ---  %s\n", end->str, first->str);
 }
@@ -60,7 +60,7 @@ static void insertNode(char *s, int index)
 
 	if (temp == NULL)
 	{
-		printf("²åÈëÁ´±íµÄÎ»ÖÃ´íÎó...");
+		printf("æ’å…¥é“¾è¡¨çš„ä½ç½®é”™è¯¯...");
 	}
 	else
 	{
@@ -71,49 +71,84 @@ static void insertNode(char *s, int index)
 		temp->next = node;
 		node->next = tempNode;
 	}
-	
 }
 
 static void prinfNode()
 {
 	Node * tempNode = first;
 
-	if (tempNode != NULL)
+	while (tempNode != NULL)
 	{
-		while (tempNode != NULL)
+		printf("%s, ", tempNode->str);
+		tempNode = tempNode->next;
+	}
+	printf("\n------------------\n");
+}
+
+// å…¶å®ä¸€èˆ¬æ˜¯æ²¡æœ‰è¿™ä¸ªåˆ é™¤èŠ‚ç‚¹æ–¹å¼çš„ï¼Œæœ‰çš„åªæ˜¯åˆ é™¤ç¬¬æŸä¸ªèŠ‚ç‚¹
+static void deleteNode(char *s)
+{
+	Node *temp = first;
+	while (temp != NULL)
+	{
+		Node * tempNode = NULL;// è¿™ä¸ªä¸´æ—¶å˜é‡ä¸èƒ½å°‘
+
+		if (temp == first) // å¦‚æœæ˜¯ç¬¬ä¸€ä¸ªèŠ‚ç‚¹
 		{
-			printf("%s, ", tempNode->str);
-			tempNode = tempNode->next;
+			if (strcmp(temp->str, s) == 0)
+			{
+				tempNode = temp->next;
+				first = tempNode;
+				temp->next = NULL;
+				free(temp);
+				break; // åªåˆ é™¤ä¸€æ¬¡ï¼Œå¦‚æœè¿˜æœ‰ç›¸åŒå€¼çš„èŠ‚ç‚¹ï¼Œå¹¶æ²¡æœ‰è¢«åˆ é™¤
+			}
 		}
-		printf("\n------------------\n");
+		
+		if (temp->next != NULL)
+		{
+			if (strcmp(temp->next->str, s) == 0)
+			{
+				tempNode = temp->next->next;
+				temp->next->next = NULL;
+				free(temp->next);
+				temp->next = tempNode; // åˆ‡æ¢èŠ‚ç‚¹
+				break;// åªåˆ é™¤ä¸€æ¬¡ï¼Œå¦‚æœè¿˜æœ‰ç›¸åŒå€¼çš„èŠ‚ç‚¹ï¼Œå¹¶æ²¡æœ‰è¢«åˆ é™¤
+			}
+			else
+			{
+				tempNode = temp->next;
+			}
+		}
+
+		temp = tempNode;
 	}
 }
 
-static void deleteNode(char *s)
-{
-	// µü´ú½Úµã£¬È»ºóÅĞ¶Ï½ÚµãÖµÏàÍ¬¾ÍÉ¾³ı
-}
-
-// Á½¸öº¯ÊıÖØ¸´ÁË£¬ËäÈ»ÀàĞÍ²»Ò»Ñù£¬µ«ÊÇ¶¼»á×ª»»Îª int ÀàĞÍ
+// ä¸¤ä¸ªå‡½æ•°é‡å¤äº†ï¼Œè™½ç„¶ç±»å‹ä¸ä¸€æ ·ï¼Œä½†æ˜¯éƒ½ä¼šè½¬æ¢ä¸º int ç±»å‹
 //void deleteNode(int index)
 //{
-//	// µü´ú½Úµã£¬È»ºóÉ¾³ı½Úµã
+//	// è¿­ä»£èŠ‚ç‚¹ï¼Œç„¶ååˆ é™¤èŠ‚ç‚¹
 //}
 
 static void updateNode(char *source, char *des)
 {
-	//µü´ú½Úµã£¬ÅĞ¶Ï½ÚµãÖµ£¬È»ºó¸üĞÂ½ÚµãÖµ
+	//è¿­ä»£èŠ‚ç‚¹ï¼Œåˆ¤æ–­èŠ‚ç‚¹å€¼ï¼Œç„¶åæ›´æ–°èŠ‚ç‚¹å€¼
 }
 
-int main_1(void)
+int main(void)
 {
 	addNode("liao");
 	addNode("hong");
 	addNode("jie");
 
-	insertNode("¹ş¹ş", 1);
+	insertNode("å“ˆå“ˆ", 1);
 	prinfNode();
-	insertNode("ÁÎºì½Ü", 1);
+
+	insertNode("å»–çº¢æ°", 1);
+	prinfNode();
+
+	deleteNode("å“ˆå“ˆ");
 	prinfNode();
 
 	return 0;
