@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 
 using namespace std;
 
@@ -27,7 +27,7 @@ namespace B
 	}
 }
 
-int main(void)
+int main_test(void)
 {
 	using namespace B;
 

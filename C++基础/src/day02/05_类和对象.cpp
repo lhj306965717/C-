@@ -1,4 +1,4 @@
-
+﻿
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
@@ -14,7 +14,7 @@ public :
 	char a[20];
 
 public : static AdvHero instance() {
-	return{ 11, "聊", "天" };
+	return{ 11, "廖红杰", "聊天"};
 	}
 };
 
@@ -30,7 +30,7 @@ int main(void) {
 
 	cout << adv.a << endl;
 
-	// ��̬���ʷ�ʽ
+	// 静态访问方式
 	AdvHero hero = AdvHero::instance();
 	cout << hero.name << endl;
 

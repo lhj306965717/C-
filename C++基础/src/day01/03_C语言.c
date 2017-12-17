@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 int g_val; //声明
 int g_val = 20; // 没有问题的，这是定义, 但在C++中 不允许

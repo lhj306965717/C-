@@ -1,6 +1,14 @@
-﻿  06_友元函数.cpp
+﻿  09_等号操作符的重载.cpp
+  08_左移右移操作符重载.cpp
+  07_操作符重载.cpp
+  06_友元函数.cpp
+  05_this指针.cpp
   04_static变量与函数.cpp
+  03_new和delete.cpp
+  02_构造函数的初始化列表.cpp
   01_构造和析构函数.cpp
   正在生成代码...
+f:\visualstudio_workspace\c-\c++基础\src\day03\07_操作符重载.cpp(105): warning C4172: 返回局部变量或临时变量的地址: temp
+f:\visualstudio_workspace\c-\c++基础\src\day03\07_操作符重载.cpp(135): warning C4172: 返回局部变量或临时变量的地址: temp
   day03.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day03.exe
   day03.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day03.pdb (Full PDB)

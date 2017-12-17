@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
 #if 1  // 注意：预处理 在最外层不能使用括号包裹起来，

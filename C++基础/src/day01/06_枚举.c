@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 enum season  //定义枚举类型，类似结构体
 {
