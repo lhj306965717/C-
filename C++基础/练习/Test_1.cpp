@@ -27,7 +27,11 @@ namespace B
 	}
 }
 
+<<<<<<< HEAD
 int main_test(void)
+=======
+int main_0(void)
+>>>>>>> 13b84ed66fdc4bd521c8f8bcaf28af25434812aa
 {
 	using namespace B;
 

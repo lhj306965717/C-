@@ -1,4 +1,5 @@
 ﻿  09_等号操作符的重载.cpp
+<<<<<<< HEAD
   08_左移右移操作符重载.cpp
   07_操作符重载.cpp
   06_友元函数.cpp
@@ -6,9 +7,43 @@
   04_static变量与函数.cpp
   03_new和delete.cpp
   02_构造函数的初始化列表.cpp
+=======
+e:\workspace\c-\c++基础\src\day03\09_等号操作符的重载.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day03\09_等号操作符的重载.cpp(74): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day03\09_等号操作符的重载.cpp(75): error C2146: 语法错误: 缺少“)”(在标识符“Student”的前面)
+e:\workspace\c-\c++基础\src\day03\09_等号操作符的重载.cpp(78): error C2065: “s2”: 未声明的标识符
+e:\workspace\c-\c++基础\src\day03\09_等号操作符的重载.cpp(78): error C2065: “s1”: 未声明的标识符
+e:\workspace\c-\c++基础\src\day03\09_等号操作符的重载.cpp(80): error C2065: “s2”: 未声明的标识符
+e:\workspace\c-\c++基础\src\day03\09_等号操作符的重载.cpp(80): error C2228: “.printf”的左边必须有类/结构/联合
+  e:\workspace\c-\c++基础\src\day03\09_等号操作符的重载.cpp(80): note: 类型是“unknown-type”
+  07_操作符重载.cpp
+e:\workspace\c-\c++基础\src\day03\07_操作符重载.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day03\07_操作符重载.cpp(79): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day03\07_操作符重载.cpp(81): error C2143: 语法错误: 缺少“;”(在“return”的前面)
+e:\workspace\c-\c++基础\src\day03\07_操作符重载.cpp(191): fatal error C1071: 在注释中遇到意外的文件结束
+  03_new和delete.cpp
+e:\workspace\c-\c++基础\src\day03\03_new和delete.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day03\03_new和delete.cpp(18): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day03\03_new和delete.cpp(19): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+  02_构造函数的初始化列表.cpp
+e:\workspace\c-\c++基础\src\day03\02_构造函数的初始化列表.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day03\02_构造函数的初始化列表.cpp(16): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day03\02_构造函数的初始化列表.cpp(27): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day03\02_构造函数的初始化列表.cpp(17): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+e:\workspace\c-\c++基础\src\day03\02_构造函数的初始化列表.cpp(28): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+e:\workspace\c-\c++基础\src\day03\02_构造函数的初始化列表.cpp(117): fatal error C1071: 在注释中遇到意外的文件结束
+>>>>>>> 13b84ed66fdc4bd521c8f8bcaf28af25434812aa
   01_构造和析构函数.cpp
+e:\workspace\c-\c++基础\src\day03\01_构造和析构函数.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day03\01_构造和析构函数.cpp(57): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day03\01_构造和析构函数.cpp(75): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day03\01_构造和析构函数.cpp(63): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+e:\workspace\c-\c++基础\src\day03\01_构造和析构函数.cpp(76): error C2143: 语法错误: 缺少“;”(在“}”的前面)
   正在生成代码...
+<<<<<<< HEAD
 f:\visualstudio_workspace\c-\c++基础\src\day03\07_操作符重载.cpp(105): warning C4172: 返回局部变量或临时变量的地址: temp
 f:\visualstudio_workspace\c-\c++基础\src\day03\07_操作符重载.cpp(135): warning C4172: 返回局部变量或临时变量的地址: temp
   day03.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day03.exe
   day03.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day03.pdb (Full PDB)
+=======
+>>>>>>> 13b84ed66fdc4bd521c8f8bcaf28af25434812aa

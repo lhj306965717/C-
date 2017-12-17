@@ -1,4 +1,5 @@
 ﻿  MyString.cpp
+<<<<<<< HEAD
   04_自定义String类.cpp
   03_自定义智能指针.cpp
   02_小括号重载和new和delete.cpp
@@ -7,3 +8,22 @@
 f:\visualstudio_workspace\c-\c++基础\src\day04\01_myarray.cpp(129): warning C4172: 返回局部变量或临时变量的地址: a
   day04.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day04.exe
   day04.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day04.pdb (Full PDB)
+=======
+e:\workspace\c-\c++基础\src\day04\mystring.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day04\mystring.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day04\mystring.cpp(60): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day04\mystring.cpp(61): error C2143: 语法错误: 缺少“;”(在“delete”的前面)
+  02_小括号重载和new和delete.cpp
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(37): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(42): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(59): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(72): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(78): error C2001: 常量中有换行符
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(38): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(43): error C2143: 语法错误: 缺少“;”(在“this”的前面)
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(60): error C2146: 语法错误: 缺少“;”(在标识符“free”的前面)
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(73): error C2146: 语法错误: 缺少“;”(在标识符“free”的前面)
+e:\workspace\c-\c++基础\src\day04\02_小括号重载和new和delete.cpp(79): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+  正在生成代码...
+>>>>>>> 13b84ed66fdc4bd521c8f8bcaf28af25434812aa
