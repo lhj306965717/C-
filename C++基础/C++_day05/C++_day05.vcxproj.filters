@@ -27,5 +27,14 @@
     <ClCompile Include="04_当子类和父类的成员重名.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="05_继承中的static.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="06_多继承与虚继承.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="07_多态的定义和多态的三个必要条件.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

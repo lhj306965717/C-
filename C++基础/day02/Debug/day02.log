@@ -1,5 +1,4 @@
 ﻿  05_类和对象.cpp
-<<<<<<< HEAD
   04_函数重载和函数指针.cpp
   03_函数重载.cpp
   02_默认参数和占位参数.cpp
@@ -7,7 +6,3 @@
   正在生成代码...
   day02.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day02.exe
   day02.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\C++_day02.pdb (Full PDB)
-=======
-  day02.vcxproj -> E:\Workspace\C-\C++基础\Debug\C++_day02.exe
-  day02.vcxproj -> E:\Workspace\C-\C++基础\Debug\C++_day02.pdb (Full PDB)
->>>>>>> 13b84ed66fdc4bd521c8f8bcaf28af25434812aa

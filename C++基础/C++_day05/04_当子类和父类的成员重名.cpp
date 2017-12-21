@@ -33,7 +33,7 @@ public:
 	}
 };
 
-int main(void)
+int main_04(void)
 {
 	Child* ch = new Child(10, 100);
 	cout << ch->a << endl;
