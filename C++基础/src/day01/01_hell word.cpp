@@ -8,7 +8,7 @@ using namespace std;  // 命名空间，很类似java的中导包
 int main_0(void)
 {
 	// cout 就是黑屏幕， endl 就是回车
-	// 怎么看这句话呢？
+	// 怎么看这句话呢？2
 	// 是将 字符串 流向 黑屏幕
 	cout << "hello word" << endl;
 

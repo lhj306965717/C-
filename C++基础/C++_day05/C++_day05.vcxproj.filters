@@ -36,5 +36,8 @@
     <ClCompile Include="07_多态的定义和多态的三个必要条件.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="08_继承中的析构函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

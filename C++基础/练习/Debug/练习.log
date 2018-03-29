@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-﻿  Node.c
+﻿  双链表.c
+  单链表.c
+  正在生成代码...
   Test_1.cpp
   练习.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\练习.exe
   练习.vcxproj -> F:\VisualStudio_Workspace\C-\C++基础\Debug\练习.pdb (Full PDB)
-=======
-﻿  单链表.c
-  练习.vcxproj -> E:\Workspace\C-\C++基础\Debug\练习.exe
-  练习.vcxproj -> E:\Workspace\C-\C++基础\Debug\练习.pdb (Full PDB)
->>>>>>> 13b84ed66fdc4bd521c8f8bcaf28af25434812aa

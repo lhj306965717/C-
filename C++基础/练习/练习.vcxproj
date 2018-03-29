@@ -146,12 +146,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <ClCompile Include="Node.c" />
-=======
     <ClCompile Include="..\src\linked\单链表.c" />
     <ClCompile Include="..\src\linked\双链表.c" />
->>>>>>> 13b84ed66fdc4bd521c8f8bcaf28af25434812aa
     <ClCompile Include="Test_1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

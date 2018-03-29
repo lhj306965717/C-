@@ -45,7 +45,7 @@ void f(Persons *p)
 	// 传递的是 子类就调用子类的方法
 }
 
-int main(void)
+int main_07(void)
 {
 	Persons *p = new Persons;
 	//p->fperson();
@@ -62,7 +62,6 @@ int main(void)
 	//wm->fperson();
 	
 	f(wm); // 结果： 调用的 Person 类的 fperson() 方法
-
 
 
 	// 多态发生的三个必要条件：
